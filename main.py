@@ -21,7 +21,7 @@ if st.button("Submit"):
         prediction = response.json()
         st.success(prediction["prediction"])
         fig, ax = plt.subplots()
-        sentiments = dict(sorted({dictionary['label']: dictionary['score'] for dictionary in prediction['sentiment']}.items(), key=lambda x: x[1],reverse=True))
+        sentiments = dict(sorted(prediction['sentiment'].items(),key= lambda x:x[1], reverse=True))
         sns.barplot(ax=ax, x=list(sentiments.keys()), y=list(sentiments.values())).set(title='Sentiment Scores')
         st.pyplot(fig)
     else:
