@@ -22,8 +22,6 @@ paths:
       description: |
         This request will generate a summary and sentiment of the tweets related to the search phrase.
         curl example
-            curl -X POST "https://master-common-computers-jonathanlampkin.endpoint.ainize.ai/"
-            -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "base_text=one day"
       content:
         multipart/form-data:
           schema:
