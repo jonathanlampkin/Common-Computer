@@ -19,7 +19,7 @@ if st.button("Submit"):
     status_code, response = send_request(base_story)
     if status_code == 200:
         prediction = response.json()
-        st.success(prediction["prediction"])
+        st.text_area(label='Summary', value=prediction['prediction'])
         fig, ax = plt.subplots()
         sentiments = dict(sorted(prediction['sentiment'].items(),key= lambda x:x[1], reverse=True))
         sns.barplot(ax=ax, x=list(sentiments.keys()), y=list(sentiments.values())).set(title='Sentiment Scores')
