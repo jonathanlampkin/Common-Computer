@@ -1,5 +1,4 @@
-**Twitter Tweets Summarizer and Sentiment Classifier**
-**By Jonathan Lampkin**
+<h2>Twitter Tweets Summarizer and Sentiment Classifier</h2>
 
 [![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=https://github.com/jonathanlampkin/Common-Computer)
 
